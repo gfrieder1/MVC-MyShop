@@ -33,7 +33,7 @@
         <tr>
             <td>
                 <a href="~/Home/Details/@item.ID">
-                    <img class="img" style="width:250px" src="~/Content/ProductImages/@item.Image" />
+                    <img class="img" style="height:50px" src="~/Content/ProductImages/@item.Image" />
                 </a>
             </td>
             <td>
@@ -47,7 +47,7 @@
             </td>
             <td>
                 <!--Line Total-->
-                @String.Format("{0:c", item.Price * item.Quantity)
+                @String.Format("{0:c}", item.Price * item.Quantity)
             </td>
             <td>
                 <a href="@Url.Action("RemoveFromBasket", "Basket", new { ID = item.ID })" class="btn btn-danger">Remove</a>
