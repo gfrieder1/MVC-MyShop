@@ -10,7 +10,7 @@ using MyShop.WebUI.Models;
 
 namespace MyShop.WebUI.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class ManageController : Controller
     {
         private ApplicationSignInManager _signInManager;
